@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "youtube-summary"
+version = "0.1.0"
+description = "YouTube video transcript extractor and summarizer"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{include = "youtube_summary"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.14"
+youtube-transcript-api = "^1.0.3"
+fire = "^0.7.0"
+python-dotenv = "^1.1.0"
+ollama = "^0.4.7"
+
+[tool.poetry.scripts]
+youtube-summary = "youtube_summary.cli:main"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
