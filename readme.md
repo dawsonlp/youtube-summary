@@ -17,7 +17,7 @@ A command-line tool to extract transcripts from YouTube videos and summarize the
 
 ### Prerequisites
 
-- Python 3.9+
+- Python 3.10+
 - Poetry (for dependency management)
 - Ollama (for local LLM, optional if using cloud providers)
 
@@ -25,7 +25,7 @@ A command-line tool to extract transcripts from YouTube videos and summarize the
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/youtube-summary.git
+   git clone https://github.com/dawsonlp/youtube-summary.git
    cd youtube-summary
    ```
 
