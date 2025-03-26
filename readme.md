@@ -2,6 +2,35 @@
 
 A command-line tool to extract transcripts from YouTube videos and summarize them using various LLM providers.
 
+## Quick Start
+
+For those who want to get started immediately:
+
+```bash
+# Clone the repository
+git clone https://github.com/dawsonlp/youtube-summary.git
+cd youtube-summary
+
+# Install Python 3.10+ if you don't have it already
+# On macOS: brew install python@3.10
+# On Ubuntu: sudo apt install python3.10
+# On Windows: Download from https://www.python.org/downloads/
+
+# Install Poetry (dependency manager)
+curl -sSL https://install.python-poetry.org | python3 -
+
+# Install project dependencies
+poetry install
+
+# Create configuration file (uses default Ollama settings)
+cp .env.example .env
+
+# Summarize a YouTube video
+poetry run youtube-summary summarize "https://www.youtube.com/watch?v=TdAAUoJ065o"
+```
+
+That's it! You'll get a summary of the video transcript in your terminal.
+
 ## Features
 
 - Extract transcripts from any YouTube video
